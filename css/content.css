@@ -1,0 +1,137 @@
+body {
+    width: 100%;
+}
+
+#category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Uniform container */
+
+
+/* Text */
+
+.item-description {
+    margin-top: 200px;
+    margin-left: -100px;
+    position: absolute;
+}
+
+.borderHolder {
+    /* border: 0.5px solid #ccc; */
+    width: 22.5%;
+    height: 400px;
+    background: white;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.borderHolder .fa-heart {
+    color: orange;
+    font-size: 20px;
+    margin-top: -320px;
+    margin-left: -220px;
+}
+
+.borderHolder .fa-heart:hover {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background: #ccc;
+}
+
+.borderHolder img {
+    width: 100%;
+}
+
+
+/* Sort */
+
+.sort {
+    color: orange;
+    margin-left: 20px;
+    border: none;
+    font-size: 18px;
+}
+
+.sort option {
+    color: rgb(102, 102, 102);
+    border: none;
+    font-size: 18px;
+}
+
+
+/* items add button */
+
+.borderHolder .add {
+    background: black;
+    width: 200px;
+    height: 40px;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 330px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    border: none;
+    cursor: cell;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borderHolder .add:hover {
+    background: black;
+    color: orange;
+    transition: 1s;
+}
+
+
+/* Category titles */
+
+.category-title {
+    padding-left: 20px;
+    font-size: 46px;
+}
+
+@media screen and (max-width:600px) {
+    .borderHolder {
+        width: 46%;
+        height: 350px;
+    }
+    .borderHolder .add {
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 280px;
+    }
+    .sort {
+        color: orange;
+        margin: 5% 0% 5% 5%;
+        border: none;
+        font-size: 18px;
+    }
+    .borderHolder .fa-heart {
+        margin-top: -280px;
+        margin-left: -120px;
+    }
+    .item-description {
+        margin-top: 140px;
+        margin-left: -50px;
+        position: absolute;
+    }
+    body {
+        width: 100%;
+        margin: 0%;
+    }
+}
