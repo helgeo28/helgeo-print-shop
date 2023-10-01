@@ -1,0 +1,221 @@
+body {
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(240, 240, 240);
+}
+
+#header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 251, 245);
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header #mySidenav {
+    display: flex;
+    /* position: absolute; */
+    margin-top: 0px;
+}
+
+
+/* icons */
+
+.fa-bars {
+    font-size: 30px;
+    display: none;
+}
+
+.icons {
+    font-size: 30px;
+    width: 20%;
+    margin-left: 65%;
+    position: absolute;
+}
+
+.icons .fa,
+.fa-regular {
+    float: right;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icons .fa:hover .tool-tip,
+.icons .fa-regular:hover .tool-tip {
+    visibility: visible;
+}
+
+.icons .fa:hover,
+.icons .fa-regular:hover {
+    transition-delay: .2s;
+    color: orange;
+}
+
+
+/* tool-tip */
+
+.tool-tip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    visibility: hidden;
+    opacity: 0.8;
+}
+
+.container {
+    background: black;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.container-tip {
+    background: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: -5px;
+    border-radius: 2px;
+}
+
+
+/* Nav */
+
+#header #mySidenav a {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+#header #mySidenav a:hover .link-under {
+    width: 100%;
+    transition: 0.5s;
+}
+
+#header #mySidenav a:hover {
+    transition-delay: 1s;
+    font-weight: bolder;
+}
+
+.link-under {
+    width: 0%;
+    background: black;
+    height: 2px;
+    margin-top: 10px;
+    transform: .5s;
+}
+
+
+/* logo */
+
+.logo {
+    background-image: url(logo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 100px;
+    position: absolute;
+    left: 20px;
+    margin-top: -30px;
+}
+
+.theme {
+    background-image: url(theme.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Arrows */
+
+.fa-chevron-right {
+    float: right;
+    opacity: 0.8;
+    display: none;
+    color: #ccc;
+}
+
+
+/* ooo */
+
+@media screen and (max-width:600px) {
+    .logo {
+        background-image: url(logo1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 220px;
+        height: 70px;
+        position: absolute;
+        left: 5px;
+        margin-top: -60px;
+    }
+    .icons {
+        width: 40%;
+        font-size: 30px;
+        margin-top: -60px;
+        margin-left: 56%;
+        position: absolute;
+    }
+    #header #mySidenav a {
+        width: 90%;
+        border-bottom: .5px solid #ccc;
+        text-justify: auto;
+        color: orange;
+        margin: 10px;
+        text-align: right;
+    }
+    #header #mySidenav {
+        display: none;
+        flex-direction: column;
+        margin-top: 50px;
+        background: white;
+        background-image: url(bg.jpg);
+        position: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: -50px;
+    }
+    .link-under {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+        position: fixed;
+        left: 0px;
+        top: 200px;
+        background: orange;
+        color: white;
+        padding: 5px;
+        z-index: 200;
+    }
+    .fa-chevron-right {
+        float: right;
+        opacity: 0.8;
+        color: #ccc;
+    }
+}
