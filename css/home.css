@@ -1,3 +1,16 @@
+/*
+hide other pages on default except home
+*/
+#linkTwo,
+#linkThree,
+#linkFour,
+#linkFive,
+#linkSix
+{
+    display:none;
+}
+
+
 .home_slide {
     background: orange;
     width: 90%;

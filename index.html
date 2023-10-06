@@ -24,13 +24,80 @@
 <body bgcolor="white">
     <div class="theme"></div>
     <div id="header">
+        <div class="nav_mobile">
+            <i class="fa-solid fa-bars"></i>
+            
+            <i class="fa fa-x closing"></i>
+            
+        </div>
         <div id="nav">
             <!-- <span id="menu" onclick="openNav();"><i class="fa fa-bars" aria-hidden="true"></i></span>
             <span id="menu_close" onclick="closeNav();"><i class="fa fa-times" aria-hidden="true"></i></span> -->
-            <i class="fa-solid fa-bars"></i>
+                
+            <style>
+                .nav_mobile {
+                    display: none;
+                }
+
+                /* icons */
+                .nav_mobile .fa-bars {
+                    font-size: 30px;
+                    display: block;
+                }
+                .nav_mobile .closing {
+                        display: none;
+                        font-size: 30px;
+                    }
+
+                @media screen and (max-width:600px) {
+                    .nav_mobile {
+                        display:flex;
+                        position: fixed;
+                        left: 0px;
+                        top: 200px;
+                        background: orange;
+                        color: white;
+                        padding: 5px;
+                        z-index: 200;
+                    }
+                    .nav_mobile .closing {
+                        color:white;
+                        display: none;
+                        font-size: 30px;
+                        margin-top: 0px;
+                    }
+              
+                }
+            </style>
             <div class="logo"></div>
             <!--------------------------------->
-            <div id="mySidenav" class="sidenav">
+            <div id="mySidenavDesktop" class="sidenav" class="desktop">
+                <a href="#linkOne"> Home
+                    <div class="link-under"></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="#linkTwo">School uniform
+                    <div class="link-under"></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <!-- <a href="#linkThree">Fashion
+                    <div class="link-under"></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a> -->
+                <a href="#linkFour">Printing
+                    <div class="link-under"></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="#linkFive">Branding
+                    <div class="link-under"></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="#linkSix">Contact
+                    <div class="link-under"></div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+            <div id="mySidenavMobile" class="sidenav" class="desktop">
                 <a href="#linkOne"> Home
                     <div class="link-under"></div>
                     <i class="fa-solid fa-chevron-right"></i>
@@ -114,7 +181,9 @@
 
             <!-- Add an image for Helgeo Printshop (replace with an actual image URL) -->
             <p>
-                Helgeo Printshop is your trusted source for high-quality uniforms in Bela-Bela, South Africa. We specialize in manufacturing, supplying, and printing uniforms for various industries, including healthcare, hospitality, corporate, and more.
+                Helgeo Printshop is your trusted source for high-quality uniforms in Bela-Bela, South Africa. We
+                specialize in manufacturing, supplying, and printing uniforms for various industries, including
+                healthcare, hospitality, corporate, and more.
             </p>
 
             <h3>Our Services:</h3>
@@ -125,7 +194,8 @@
             </ul>
 
             <p>
-                Contact Helgeo Printshop today to discuss your uniform needs and printing requirements. We look forward to serving you.
+                Contact Helgeo Printshop today to discuss your uniform needs and printing requirements. We look forward
+                to serving you.
             </p>
 
 
@@ -135,16 +205,20 @@
             <h3>About Helgeo printshop</h3>
             <div class="text-title">Vibrant and Permanent Colors <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Vibrant and Permanent Colors <i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">Sublimation printing produces incredibly vibrant and long-lasting colors. The ink becomes part of the fabric or substrate, resulting in a fade-resistant and durable print.</div>
+            <div class="text-paragraph">Sublimation printing produces incredibly vibrant and long-lasting colors. The
+                ink becomes part of the fabric or substrate, resulting in a fade-resistant and durable print.</div>
             <div class="text-title">Photo-Quality Printing <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Photo-Quality Printing<i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">It is an ideal choice for printing high-resolution images, photographs, and intricate designs with fine details.</div>
+            <div class="text-paragraph">It is an ideal choice for printing high-resolution images, photographs, and
+                intricate designs with fine details.</div>
             <div class="text-title">Washability <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Washability <i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">Sublimated prints are highly resistant to fading or cracking when subjected to washing, making them suitable for sportswear and other items that require frequent cleaning.</div>
+            <div class="text-paragraph">Sublimated prints are highly resistant to fading or cracking when subjected to
+                washing, making them suitable for sportswear and other items that require frequent cleaning.</div>
             <div class="text-title">Durability <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Durability <i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">Sublimation prints are known for their durability, as they are less prone to peeling, fading, or cracking compared to some other printing methods.</div>
+            <div class="text-paragraph">Sublimation prints are known for their durability, as they are less prone to
+                peeling, fading, or cracking compared to some other printing methods.</div>
         </div>
     </section>
 
@@ -172,7 +246,8 @@
 
     <section id="linkFour">
         <h1 class="page-name">Sublimation Printing</h1>
-        <p class="description">Whether you need custom sportswear, personalized apparel, or unique promotional items,we have you covered.
+        <p class="description">Whether you need custom sportswear, personalized apparel, or unique promotional items,we
+            have you covered.
 
         </p>
         <div class="products">
@@ -206,23 +281,28 @@
             <h3>About sublimation printing</h3>
             <div class="text-title">Vibrant and Permanent Colors <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Vibrant and Permanent Colors <i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">Sublimation printing produces incredibly vibrant and long-lasting colors. The ink becomes part of the fabric or substrate, resulting in a fade-resistant and durable print.</div>
+            <div class="text-paragraph">Sublimation printing produces incredibly vibrant and long-lasting colors. The
+                ink becomes part of the fabric or substrate, resulting in a fade-resistant and durable print.</div>
             <div class="text-title">Photo-Quality Printing <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Photo-Quality Printing<i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">It is an ideal choice for printing high-resolution images, photographs, and intricate designs with fine details.</div>
+            <div class="text-paragraph">It is an ideal choice for printing high-resolution images, photographs, and
+                intricate designs with fine details.</div>
             <div class="text-title">Washability <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Washability <i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">Sublimated prints are highly resistant to fading or cracking when subjected to washing, making them suitable for sportswear and other items that require frequent cleaning.</div>
+            <div class="text-paragraph">Sublimated prints are highly resistant to fading or cracking when subjected to
+                washing, making them suitable for sportswear and other items that require frequent cleaning.</div>
             <div class="text-title">Durability <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Durability <i class="fa fa-chevron-right"></i></div>
-            <div class="text-paragraph">Sublimation prints are known for their durability, as they are less prone to peeling, fading, or cracking compared to some other printing methods.</div>
+            <div class="text-paragraph">Sublimation prints are known for their durability, as they are less prone to
+                peeling, fading, or cracking compared to some other printing methods.</div>
         </div>
     </section>
 
     <section id="linkFive">
         <h1 class="page-name">Branding</h1>
         <p class="description">
-            Helgeo Printshop delivers precision and vibrant UV Printing services. Experience fast-drying, durable prints on diverse materials with stunning detail and color.
+            Helgeo Printshop delivers precision and vibrant UV Printing services. Experience fast-drying, durable prints
+            on diverse materials with stunning detail and color.
         </p>
         <div class="products">
             <div class="products-panel">
@@ -246,22 +326,26 @@
             <div class="text-title">High-Quality Prints <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">High-Quality Prints <i class="fa fa-chevron-right"></i></div>
             <div class="text-paragraph">
-                UV printing produces sharp and high-resolution prints with vibrant colors and fine details, making it ideal for branding and marketing materials
+                UV printing produces sharp and high-resolution prints with vibrant colors and fine details, making it
+                ideal for branding and marketing materials
             </div>
             <div class="text-title">Durable and Scratch-Resistant <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Durable and Scratch-Resistant <i class="fa fa-chevron-right"></i></div>
             <div class="text-paragraph">
-                UV prints are known for their durability and resistance to scratching, making them suitable for items that may undergo wear and tear.
+                UV prints are known for their durability and resistance to scratching, making them suitable for items
+                that may undergo wear and tear.
             </div>
             <div class="text-title">Resistance to Fading <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Resistance to Fading <i class="fa fa-chevron-right"></i></div>
             <div class="text-paragraph">
-                UV prints are highly resistant to fading from UV exposure, ensuring that branding items maintain their quality and appearance over time.
+                UV prints are highly resistant to fading from UV exposure, ensuring that branding items maintain their
+                quality and appearance over time.
             </div>
             <div class="text-title">Customization <i class="fa fa-chevron-right"></i></div>
             <div class="no_display">Customization <i class="fa fa-chevron-right"></i></div>
             <div class="text-paragraph">
-                UV branding allows for easy customization, making it suitable for personalized promotional products, labels, packaging, and more.
+                UV branding allows for easy customization, making it suitable for personalized promotional products,
+                labels, packaging, and more.
             </div>
         </div>
     </section>
@@ -282,7 +366,8 @@
                     <label>Message</label>
                     <textarea name="Message"></textarea>
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://helgeo28.github.io/helgeo-print-shop/thankyou.html">
+                    <input type="hidden" name="_next"
+                        value="https://helgeo28.github.io/helgeo-print-shop/thankyou.html">
                     <button type="submit">Send Message</button>
                 </form>
             </div>
@@ -319,7 +404,7 @@
     <div id="loaders">
         <div class="loader"></div>
         <h1 class="count">
-            <span class="count-up"></span>
+            <span class="count-up"><img src="load.png" width="100%"></span>
         </h1>
     </div>
 
@@ -331,7 +416,8 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <p>&copy;<span id="year"></span> Helgeo Printshop. All Rights Reserved.</p>
-                    <h3> Chris Hani Road, Bela-Bela, 0480(Limpopo) Next to Dept. of Education (Between Afican Bank and Pharmacy)</h3>
+                    <h3> Chris Hani Road, Bela-Bela, 0480(Limpopo) Next to Dept. of Education (Between Afican Bank and
+                        Pharmacy)</h3>
                 </div>
                 <script>
                     const yearCurrent = document.getElementById(year);
@@ -340,7 +426,8 @@
                 <div class="footer-info">
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=100064016446207" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100064016446207" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
                     <a href="https://wa.me/c/27678812072" target="_blank"><i class="fa fa-whatsapp"></i></a>
                     <a href="tel:0723803066" target="_blank"><i class="fa fa-phone"></i></a>
                 </div>

@@ -21,19 +21,19 @@ body {
     justify-content: center;
 }
 
-#header #mySidenav {
+#header #mySidenavDesktop {
+    display: flex;
+    /* position: absolute; */
+    margin-top: 0px;
+}
+#header #mySidenavMobile {
     display: flex;
     /* position: absolute; */
     margin-top: 0px;
 }
 
 
-/* icons */
 
-.fa-bars {
-    font-size: 30px;
-    display: none;
-}
 
 .icons {
     font-size: 30px;
@@ -101,19 +101,26 @@ body {
 
 /* Nav */
 
-#header #mySidenav a {
+#header #mySidenavDesktop a {
     margin: 0px 10px;
     text-decoration: none;
     font-size: 24px;
     color: black;
 }
+#header #mySidenavMobile a {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    display: none;
+}
 
-#header #mySidenav a:hover .link-under {
+#header #mySidenavDesktop a:hover .link-under {
     width: 100%;
     transition: 0.5s;
 }
 
-#header #mySidenav a:hover {
+#header #mySidenavDesktop a:hover {
     transition-delay: 1s;
     font-weight: bolder;
 }
@@ -180,15 +187,16 @@ body {
         margin-left: 56%;
         position: absolute;
     }
-    #header #mySidenav a {
+    #header #mySidenavMobile a {
         width: 90%;
         border-bottom: .5px solid #ccc;
         text-justify: auto;
         color: orange;
         margin: 10px;
         text-align: right;
+        display: block;
     }
-    #header #mySidenav {
+    #header #mySidenavMobile {
         display: none;
         flex-direction: column;
         margin-top: 50px;
@@ -200,19 +208,13 @@ body {
         background-position-x: 0px;
         background-position-y: -50px;
     }
+    #header #mySidenavDesktop {
+        display:none;
+    }
     .link-under {
         display: none;
     }
-    .fa-bars {
-        display: block;
-        position: fixed;
-        left: 0px;
-        top: 200px;
-        background: orange;
-        color: white;
-        padding: 5px;
-        z-index: 200;
-    }
+  
     .fa-chevron-right {
         float: right;
         opacity: 0.8;

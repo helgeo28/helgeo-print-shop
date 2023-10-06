@@ -1,7 +1,8 @@
-const nav = document.querySelector("#mySidenav");
+const nav = document.querySelector("#mySidenavMobile");
 const navA = document.querySelectorAll(".sidenav a");
 nav.style.transition = "1s";
-document.querySelector(".fa-bars").addEventListener('click', () => {
+
+document.querySelector(".nav_mobile .fa-bars").addEventListener('click', () => {
     nav.style.width = "100%";
     nav.style.height = "100%";
     nav.style.margin = "0px";
@@ -13,12 +14,24 @@ document.querySelector(".fa-bars").addEventListener('click', () => {
 
     setTimeout(() => {
         // nav.style.top = "200px"
+        document.querySelector(".nav_mobile .fa-bars").style.display="none";
+        document.querySelector(".nav_mobile .closing").style.display="block";
         navA.forEach((navA) => {
             navA.style.color = "black";
-            navA.style.transition = "2s";
+            navA.style.transition = "1s";
         })
-    }, 3000);
+    }, 500);
 }, 1000);
+
+document.querySelector(".nav_mobile .closing").addEventListener('click', () => {
+    document.querySelector(".nav_mobile .fa-bars").style.display="block";
+    document.querySelector(".nav_mobile .closing").style.display="none";
+    nav.style.display = "none";
+    navA.forEach((navA) => {
+        navA.style.color = "orange";
+        navA.style.transition = "1s";
+    })
+});
 
 
 //Scroll
