@@ -100,17 +100,45 @@ export { uniform_A, uniform_B, uniform_C, uniform_D, uniform_E, uniform_F, unifo
 // text
 const itemTextA = [
   `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
+  `<h3>Short sleeve</h3><p>Gold Shirt</p>`,
+  `<h3>Jersey</h3><p>Gold and black</p>`,
+  `<h3>Pullover</h3><p>Gold and black</p>`,
+  `<h3>Trouser</h3><p>Black</p>`,
+  `<h3>Socks</h3><p>Gold and black</p>`,
+  `<h3>School dress</h3><p>Gold</p>`,
+  `<h3>Tracksuits</h3><p>Gold and black</p>`,
 ];
-const itemTextB = [];
-const itemTextC = [];
-const itemTextD = [];
+const itemTextB = [
+  `<h3>Long sleeve</h3><p>Royal Purple shirt</p>`,
+  `<h3>Short sleeve</h3><p>Royal Purple shirt</p>`,
+  `<h3>Jersey</h3><p>Grey</p>`,
+  `<h3>Pullover</h3><p>Grey</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Socks</h3><p>Grey</p>`,
+  `<h3>Sports wear</h3><p>Blue and gold</p>`,
+  `<h3>Skirts</h3><p>Dark blue</p>`,
+];
+const itemTextC = [
+  `<h3>Long sleeve</h3><p>Grey shirt</p>`,
+  `<h3>Short sleeve</h3><p>Grey shirt</p>`,
+  `<h3>Jersey</h3><p>Maroon and gold</p>`,
+  `<h3>Pullover</h3><p>Maroon and gold</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Socks</h3><p>Maroon and gold</p>`,
+  `<h3>Drimack</h3><p>Maroon</p>`,
+  `<h3>Sports wear</h3>Maroon and gold</p>`,
+  `<h3>School dress</h3>Maroon and gold</p>`,
+];
+
+const itemTextD = [
+  `<h3>Long sleeve</h3><p>Lightblue shirt</p>`,
+  `<h3>Short sleeve</h3><p>Lightblue shirt</p>`,
+  `<h3>Jersey</h3><p>Lightblue</p>`,
+  `<h3>Pullover</h3><p>Lightblue</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Socks</h3><p>Lightblue</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+];
 const itemTextE = [];
 const itemTextF = [];
 const itemTextG = [];
