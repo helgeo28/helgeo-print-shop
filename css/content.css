@@ -1,13 +1,37 @@
 body {
     width: 100%;
 }
+#content{
+    display: flex;
 
+}
+#sideNav{
+    width: 20%;
+    height:500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px rgb(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 2%;
+}
+.fixing{
+    position: fixed;
+    margin-top: -240px;
+}
+.LeftMargin{
+    margin-left: 20%;
+}
 #category {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 75%;
+    flex:4;
 }
+
 
 
 /* Uniform container */
@@ -36,18 +60,25 @@ body {
     align-items: center;
     z-index: 20;
 }
-
-.borderHolder .fa-heart {
-    color: orange;
-    font-size: 20px;
+.unfilled{
     margin-top: -320px;
     margin-left: -220px;
 }
-
-.borderHolder .fa-heart:hover {
-    color: rgb(255, 255, 255);
+.filled{
+    margin-top: -320px;
+    margin-left: -220px;
+    display: none;
+}
+.borderHolder .unfilled-heart {
+    color: orange;
     font-size: 20px;
-    background: #ccc;
+    cursor:copy;
+}
+.borderHolder .filled-heart {
+    color: orange;
+    font-size: 20px;
+    cursor:copy;
+    
 }
 
 .borderHolder img {
@@ -101,8 +132,8 @@ body {
 /* Category titles */
 
 .category-title {
-    padding-left: 20px;
-    font-size: 46px;
+    padding-left: 50px;
+    font-size: 36px;
 }
 
 @media screen and (max-width:600px) {
@@ -121,10 +152,6 @@ body {
         border: none;
         font-size: 18px;
     }
-    .borderHolder .fa-heart {
-        margin-top: -280px;
-        margin-left: -120px;
-    }
     .item-description {
         margin-top: 140px;
         margin-left: -50px;
@@ -134,4 +161,34 @@ body {
         width: 100%;
         margin: 0%;
     }
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+    #sideNav{
+        height:500px;
+        flex: 1;
+        border-radius: 10px;
+        margin-left: 50px;
+        display: none;
+    }
+    #category {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .unfilled{
+        margin-top: -300px;
+        margin-left: -150px;
+    }
+    .filled{
+        margin-top: -300px;
+        margin-left: -150px;
+        display: none;
+    }
+    
 }

@@ -13,7 +13,7 @@
 
 .sticky {
     position: fixed;
-    top: -20px;
+    top: -15px;
     width: 100%;
     height: 100px;
     background: orange;
@@ -23,9 +23,6 @@
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
 }
 
-.sticky a {
-    color: white;
-}
 
 .LinkColor {
     color: white;
