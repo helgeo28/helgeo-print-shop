@@ -9,8 +9,8 @@ const images = [
   ["printing/HD1.jpg", "printing/HD2.jpg", "printing/HD3.jpg", "printing/HD4.jpg"],
   ["printing/SU1.jpg", "printing/SU1B.jpg", "printing/SU2.jpg", "printing/SU2B.jpg", "printing/SU3.jpg", "printing/SU3B.jpg", "printing/SU4.jpg", "printing/SU4B.jpg"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
-  ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
-  ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
+  ["printing/em1.jpg", "printing/em2.jpg", "printing/em3.jpg", "printing/em4.jpg"],
+  ["printing/wk1.jpg", "printing/wk2.jpg", "printing/wk3.jpg", "printing/wk4.jpg"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
@@ -37,7 +37,22 @@ slides.forEach((slides, index) => {
   slides.style.transition = `0.5s`;
   slides.setAttribute("data-id", `brand${index + 1}`);
 });
-const description = ["Gazebos and banners", "Sports jerseys", "Custom hoodies", "Matric and Grade 7's t-shirst", "Matric Jackets", "Coffee mugs", "cellphone pouches", "Bottles"];
+const description = [
+  "Gazebos and banners",
+  "Sports jerseys",
+  "Custom hoodies",
+  "Matric and Grade 7's t-shirst",
+  "Matric Jackets",
+  "Baseball jackets",
+  "Work uniform",
+  "",
+  "",
+  "",
+  "",
+  "Coffee mugs",
+  "cellphone pouches",
+  "Bottles",
+];
 const caption = document.querySelectorAll(".slide");
 
 slides.forEach((slides, index) => {
