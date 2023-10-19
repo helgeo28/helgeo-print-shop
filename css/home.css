@@ -12,7 +12,9 @@ hide other pages on default except home
 #linkThree,
 #linkFour,
 #linkFive,
-#linkSix
+#linkSix,
+#embroidery,
+#vinyl
 {
     display:none;
 }

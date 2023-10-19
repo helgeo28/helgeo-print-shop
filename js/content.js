@@ -138,9 +138,19 @@ const itemTextD = [
   `<h3>Trouser</h3><p>Grey</p>`,
   `<h3>Socks</h3><p>Lightblue</p>`,
   `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Tracksuits</h3><p>Lightblue</p>`,
 ];
-const itemTextE = [];
-const itemTextF = [];
+const itemTextE = [
+  `<h3>Long sleeve</h3><p>Gold shirt</p>`,
+  `<h3>Short sleeve</h3><p>Gold shirt</p>`,
+  `<h3>Jersey</h3><p>Green and yellow</p>`,
+  `<h3>Pullover</h3><p>Green and yellow</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Socks</h3><p>Green</p>`,
+  `<h3>Drimack</h3><p>Green</p>`,
+  `<h3>Skirts</h3><p>Green</p>`,
+];
+const itemTextF = [`<h3>Long sleeve</h3><p>White</p>`, `<h3>Short sleeve</h3><p>White</p>`, `<h3>Jersey</h3><p>Naivyblue</p>`, `<h3>Pullover</h3><p>Naivyblue</p>`, `<h3>Trouser</h3><p>Grey</p>`];
 const itemTextG = [];
 const itemTextH = [];
 const itemTextI = [];
