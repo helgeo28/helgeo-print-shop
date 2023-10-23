@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 400px;
     margin-bottom: 50px;
+    clear: both;
 }
 
 .text-title {
