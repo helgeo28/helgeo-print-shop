@@ -33,37 +33,56 @@ function changeImages() {
 setInterval(changeImages, 2500);
 
 //horizontal scrolling
+//Items array:
+const itemsArray = [
+  "printing/GZ1.jpg",
+  "printing/GZ7.jpg",
+  "printing/GZ8.jpg",
+  "printing/SP1.jpg",
+  "printing/SP2.jpg",
+  "printing/SP3.jpg",
+  "printing/HD1.jpg",
+  "printing/HD2.jpg",
+  "printing/HD3.jpg",
+  "printing/SU1.jpg",
+  "printing/SU1B.jpg",
+  "printing/SU2.jpg",
+  "printing/JS1.jpg",
+  "printing/JS2.jpg",
+  "printing/JS3.jpg",
+  "printing/em1.jpg",
+  "printing/em2.jpg",
+  "printing/em3.jpg",
+  "printing/wk1.jpg",
+  "printing/wk2.jpg",
+  "printing/wk3.jpg",
+  "printing/sb1.webp",
+  "printing/sb2.png",
+  "printing/sb3.webp",
+  "printing/vn1.png",
+  "printing/vn2.jpg",
+  "printing/vn3.jpg",
+];
 
-function items_list() {
-  const itemsArray = [
-    "printing/GZ1.jpg",
-    "printing/GZ7.jpg",
-    "printing/GZ8.jpg",
-    "printing/SP1.jpg",
-    "printing/SP2.jpg",
-    "printing/SP3.jpg",
-    "printing/HD1.jpg",
-    "printing/HD2.jpg",
-    "printing/HD3.jpg",
-    "printing/SU1.jpg",
-    "printing/SU1B.jpg",
-    "printing/SU2.jpg",
-    "printing/JS1.jpg",
-    "printing/JS2.jpg",
-    "printing/JS3.jpg",
-    "printing/em1.jpg",
-    "printing/em2.jpg",
-    "printing/em3.jpg",
-    "printing/wk1.jpg",
-    "printing/wk2.jpg",
-    "printing/wk3.jpg",
-    "printing/sb1.webp",
-    "printing/sb2.png",
-    "printing/sb3.webp",
-    "printing/vn1.png",
-    "printing/vn2.jpg",
-    "printing/vn3.jpg",
-  ];
+const itemsLinksArray = [
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+  "#linkFour",
+];
+
+function itemsAdd() {
   const horizontalScroller = document.querySelector(".horizontal-scrolling");
   horizontalScroller.style.transition = "1s";
   horizontalScroller.style.position = "absolute";
@@ -72,45 +91,87 @@ function items_list() {
   horizontalScroller.style.width = `${itemsArray.length * 300}px`; // Ensure the container expands to the available width
 
   for (let i = 0; i < itemsArray.length; i++) {
+    const viewMore = document.createElement("a");
+    viewMore.innerHTML = `<i class="fa-solid fa-eye"></i> View more`;
+    viewMore.href = itemsLinksArray[i];
+
+    viewMore.style.textDecoration = "none";
+    viewMore.style.background = "black";
+    viewMore.style.color = "white";
+    viewMore.style.fontSize = "16px";
+    viewMore.style.padding = "10px";
+    viewMore.style.borderRadius = "10px";
+    viewMore.style.marginTop = "250px";
+    viewMore.style.marginLeft = "20px";
+    viewMore.style.position = "absolute";
+
     const items = document.createElement("div");
     items.style.width = "300px";
     items.style.height = "300px";
     items.style.marginRight = "10px";
-    items.style.background = `orange`;
+    items.style.display = `flex`;
+    items.style.alignItems = `center`;
+    items.style.justifyContent = `center`;
     items.style.backgroundImage = `url(${itemsArray[i]})`;
     items.style.backgroundSize = `cover`;
     items.style.backgroundPosition = `center`;
     items.style.backgroundRepeat = `no-repeat`;
     items.style.display = "inline-block"; // Display items in a row
 
+    items.appendChild(viewMore);
     horizontalScroller.appendChild(items);
   }
+  return horizontalScroller;
+}
+
+//
+const horiScroller = document.querySelector(".horizontal-scrolling");
+horiScroller.style.transition = "1s";
+horiScroller.style.position = "absolute";
+
+if (window.innerWidth <= 600) {
+  itemsAdd();
   counting = 0;
-  document.querySelector("#counter_no").innerHTML = counting;
+  // document.querySelector("#counter_no").innerHTML = counting;
   document.querySelector(".l").addEventListener("click", () => {
     counting -= 300;
-    horizontalScroller.style.left = `${counting}px`;
-    if (counting < -6600) {
-      counting = -6600;
-      horizontalScroller.style.left = `${counting}px`;
-    }
-    if (window.innerWidth <= 600) {
-      if (counting < -7500) {
-        counting = -7500;
-        horizontalScroller.style.left = `${counting}px`;
-      }
+    horiScroller.style.left = `${counting}px`;
+    if (counting < -7500) {
+      counting = -7500;
+      horiScroller.style.left = `${counting}px`;
     }
     // document.querySelector("#counter_no").innerHTML = counting;
   });
   document.querySelector(".r").addEventListener("click", () => {
     counting += 300;
-    horizontalScroller.style.left = `${counting}px`;
+    horiScroller.style.left = `${counting}px`;
     if (counting >= 0) {
       counting = 0;
-      horizontalScroller.style.left = `${counting}px`;
+      horiScroller.style.left = `${counting}px`;
+    }
+    // document.querySelector("#counter_no").innerHTML = counting;
+  });
+} else {
+  itemsAdd();
+  counting = 0;
+  // document.querySelector("#counter_no").innerHTML = counting;
+  document.querySelector(".l").addEventListener("click", () => {
+    counting -= 300;
+    horiScroller.style.left = `${counting}px`;
+    if (counting < -6600) {
+      counting = -6600;
+      horiScroller.style.left = `${counting}px`;
+    }
+
+    // document.querySelector("#counter_no").innerHTML = counting;
+  });
+  document.querySelector(".r").addEventListener("click", () => {
+    counting += 300;
+    horiScroller.style.left = `${counting}px`;
+    if (counting >= 0) {
+      counting = 0;
+      horiScroller.style.left = `${counting}px`;
     }
     // document.querySelector("#counter_no").innerHTML = counting;
   });
 }
-
-items_list();

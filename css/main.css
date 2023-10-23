@@ -37,14 +37,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    margin-top: 400px;
 }
 .scollers .fa{
     font-size: 36px;
-    width:200px;
+    width:45%;
+    margin: 50px;
     text-align: center;
     color: orange;
     cursor: pointer;
 }
+
+
 #home{
     margin-top: 500px;
 }
@@ -54,6 +59,9 @@ body {
         margin-left: 40px;
     }
     #home{
-        margin-top: 300px;
+        margin-top: 450px;
+    }
+    .scollers{
+        margin-top: 350px;
     }
 }
