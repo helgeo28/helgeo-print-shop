@@ -80,6 +80,18 @@ const itemsLinksArray = [
   "#linkFour",
   "#linkFour",
   "#linkFour",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#embroidery",
+  "#vinyl",
+  "#vinyl",
+  "#vinyl",
 ];
 
 function itemsAdd() {
@@ -106,14 +118,16 @@ function itemsAdd() {
     viewMore.style.position = "absolute";
 
     const items = document.createElement("div");
+    items.setAttribute("class", "viewItems");
     items.style.width = "300px";
     items.style.height = "300px";
     items.style.marginRight = "10px";
     items.style.display = `flex`;
     items.style.alignItems = `center`;
     items.style.justifyContent = `center`;
+    items.style.background = "white";
     items.style.backgroundImage = `url(${itemsArray[i]})`;
-    items.style.backgroundSize = `cover`;
+    items.style.backgroundSize = `90%`;
     items.style.backgroundPosition = `center`;
     items.style.backgroundRepeat = `no-repeat`;
     items.style.display = "inline-block"; // Display items in a row

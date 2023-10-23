@@ -64,6 +64,23 @@ body {
     color: orange;
 }
 
+.l,.r{
+    visibility: visible;
+}
+.l:hover .tool-tip{
+    visibility: visible;
+    position: relative;
+    margin-top: 0px;
+    clear: both;
+    margin-left: 200px;
+}
+.r:hover .tool-tip{
+    visibility: visible;
+    position: relative;
+    margin-top: 0px;
+    clear: both;
+    margin-left: 200px;
+}
 
 /* tool-tip */
 
@@ -220,5 +237,12 @@ body {
         float: right;
         opacity: 0.8;
         color: #ccc;
+    }
+
+    .l:hover .tool-tip{
+        display: none;
+    }
+    .r:hover .tool-tip{
+        display: none;
     }
 }

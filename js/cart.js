@@ -3,307 +3,307 @@ import * as productImages from "./content.js";
 function addToCart() {
   const products = {
     a1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryA/a1.jpg",
     },
     a2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Short sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryA/a2.jpg",
     },
     a3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Jersey</h3><h4>Black and gold</h4>`,
       image: "Uniform/CategoryA/a3.jpg",
     },
     a4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Pullover</h3><h4>Black and gold</h4>`,
       image: "Uniform/CategoryA/a4.jpg",
     },
     a5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Trouser</h3><h4>Black</h4>`,
       image: "Uniform/CategoryA/a5.jpg",
     },
     a6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Socks</h3><h4>Black</h4>`,
       image: "Uniform/CategoryA/a6.jpg",
     },
     a7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>School dress</h3><h4>Gold</h4>`,
       image: "Uniform/CategoryA/a7.jpg",
     },
     a8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Tracksuits</h3><h4>Gold and black</h4>`,
       image: "Uniform/CategoryA/a8.jpg",
     },
     b1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Royal purple Shirt</h4>`,
       image: "Uniform/CategoryB/b1.jpg",
     },
     b2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Short sleeves</h3><h4>Royal purple Shirt</h4>`,
       image: "Uniform/CategoryB/b2.jpg",
     },
     b3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Jersey</h3><h4>Grey</h4>`,
       image: "Uniform/CategoryB/b3.jpg",
     },
     b4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Pullover</h3><h4>Grey</h4>`,
       image: "Uniform/CategoryB/b4.jpg",
     },
     b5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Trouser</h3><h4>Grey</h4>`,
       image: "Uniform/CategoryB/b5.jpg",
     },
     b6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryB/b6.webp",
     },
     b7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryB/b7.jpg",
     },
     b8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryB/b8.jpg",
     },
     c1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c1.jpg",
     },
     c2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c2.jpg",
     },
     c3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c3.jpg",
     },
     c4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c4.jpg",
     },
     c5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c5.jpg",
     },
     c6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c6.jpg",
     },
     c7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c7.jpg",
     },
     c8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c8.jpg",
     },
     c9: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryC/c9.jpg",
     },
     d1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d1.jpg",
     },
     d2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d2.jpg",
     },
     d3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d3.jpg",
     },
     d4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d4.jpg",
     },
     d5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d5.jpg",
     },
     d6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d6.jpg",
     },
     d7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d7.jpg",
     },
     d8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryD/d8.jpg",
     },
     e1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e1.jpg",
     },
     e2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e2.jpg",
     },
     e3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e3.jpg",
     },
     e4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e4.jpg",
     },
     e5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e5.jpg",
     },
     e6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e6.webp",
     },
     e7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e7.jpg",
     },
     e8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryE/e8.jpg",
     },
     f1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f1.jpg",
     },
     f2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f2.jpg",
     },
     f3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f3.jpg",
     },
     f4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f4.jpg",
     },
     f5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f5.jpg",
     },
     f6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f6.webp",
     },
     f7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f7.jpg",
     },
     f8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryF/f8.jpg",
     },
     g1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g1.jpg",
     },
     g2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g2.jpg",
     },
     g3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g3.jpg",
     },
     g4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g4.jpg",
     },
     g5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g5.jpg",
     },
     g6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g6.jpg",
     },
     g7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g7.jpg",
     },
     g8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g8.jpg",
     },
     g9: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryG/g9.jpg",
     },
     h1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h1.jpg",
     },
     h2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h2.jpg",
     },
     h3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h3.jpg",
     },
     h4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h4.jpg",
     },
     h5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h5.jpg",
     },
     h6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h6.jpg",
     },
     h7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h7.jpg",
     },
     h8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h8.jpg",
     },
     h9: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h9.jpg",
     },
     h10: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryH/h10.jpg",
     },
     i1: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i1.jpg",
     },
     i2: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i2.jpg",
     },
     i3: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i3.jpg",
     },
     i4: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i4.jpg",
     },
     i5: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i5.jpg",
     },
     i6: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i6.jpg",
     },
     i7: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i7.jpg",
     },
     i8: {
-      name: `<h3>Long sleeve</h3><h4>Gold Shirt</h4>`,
+      name: `<h3>Long sleeves</h3><h4>Gold Shirt</h4>`,
       image: "Uniform/CategoryI/i8.jpg",
     },
     //Branding
@@ -445,7 +445,7 @@ function addToCart() {
       cartItem.style.backgroundImage = `url(${item.image})`;
       const cartInfo = document.createElement("div");
       cartInfo.classList.add("cart-info");
-      cartInfo.innerHTML = `<div class="item-name">${item.name}</div> <br> Quantity: ${item.quantity}
+      cartInfo.innerHTML = `<div class="item-name">${item.name}</div> <br> <div class="quantity">Quantity <input name="${item.name}:Quantity" value = "${item.quantity}"></div>
             <div class="sizes">
             <i class="fa-solid fa-tags"></i>
             <table>
@@ -467,6 +467,7 @@ function addToCart() {
             `;
 
       const deleteButton = document.createElement("button");
+      deleteButton.setAttribute("class", "removeBtn");
       deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i> Remove';
       deleteButton.addEventListener("click", () => deleteCartItem(item.id));
 

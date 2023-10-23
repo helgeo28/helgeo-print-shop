@@ -13,8 +13,8 @@ const images = [
   ["printing/wk1.jpg", "printing/wk2.jpg", "printing/wk3.jpg", "printing/wk4.jpg"],
   ["printing/sb1.webp", "printing/sb2.png", "printing/sb3.webp", "printing/sb4.webp"],
   ["printing/vn1.png", "printing/vn2.jpg", "printing/vn3.jpg", "printing/vn4.jpg", "printing/vn5.jpg", "printing/vn6.jpg"],
-  ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
-  ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
+  ["printing/vh1.jpg", "printing/vh2.webp", "printing/vh3.jpg", "printing/vh4.jpg", "printing/vh5.jpg"],
+  ["printing/kd1.jpg", "printing/kd2.jpg", "printing/kd3.jpg", "printing/kd4.png"],
   ["Branding/mugs/M1.jpg", "Branding/mugs/M2.jpg", "Branding/mugs/M3.jpg", "Branding/mugs/M4.jpg", "Branding/mugs/M5.jpg", "Branding/mugs/M6.jpg"],
   ["Branding/phones/p1.webp", "Branding/phones/p2.webp", "Branding/phones/p3.webp", "Branding/phones/p4.jpg"],
   [

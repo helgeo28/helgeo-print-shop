@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".sidenav a");
+  //items links
+  const viewItemLinks = document.querySelectorAll(".viewItems a");
   const sections = document.querySelectorAll("section");
   const page_title = document.getElementById("page-name");
 
@@ -20,15 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     loaders.style.display = "flex";
     loaders.style.opacity = op;
     loaders.style.zIndex = "186";
-    document.querySelector(
-      ".count"
-    ).innerHTML = `<img src="load.png" width="100%">`;
+    document.querySelector(".count").innerHTML = `<img src="load.png" width="100%">`;
     document.querySelector(".count").style.display = "block";
 
     return loaders;
   }
   const pageTitles = [""];
-  
+
   // Function to handle navigation link clicks
   function handleNavLinkClick(event) {
     event.preventDefault();
@@ -52,9 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clearInterval(startStart);
       x.style.display = "none";
       x.style.opacity = "0.8";
-      document.querySelector(
-        ".count"
-      ).innerHTML = `<img src="load.png" width="100%">`;
+      document.querySelector(".count").innerHTML = `<img src="load.png" width="100%">`;
       // refresh page
       // window.location.reload();
       // Store the active section in localStorage
@@ -65,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add click event listeners to navigation links
   navLinks.forEach((link) => {
     link.addEventListener("click", handleNavLinkClick);
+  });
+  viewItemLinks.forEach((linkIndex) => {
+    linkIndex.addEventListener("click", handleNavLinkClick);
   });
 
   // Retrieve and set the last active section from localStorage on page load
