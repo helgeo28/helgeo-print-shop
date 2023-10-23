@@ -486,7 +486,24 @@ function addToCart() {
   }
 
   // Display the initial cart contents when the page loads
-  document.getElementById("cart-count").innerHTML = displayCart();
+}
+
+// 1. Check if the local storage variable exists
+if (localStorage.getItem("cart-display")) {
+  // 2. Retrieve the local storage variable
+  const yourLocalStorageData = JSON.parse(localStorage.getItem("cart-display"));
+
+  // 3. Check the length and display the item if it's greater than 0
+  if (yourLocalStorageData.length > 0) {
+    // Display the item or perform your desired action
+    document.getElementById("cart-count").innerHTML = yourLocalStorageData.length;
+  } else {
+    // Don't display the item or perform an alternative action
+    document.getElementById("cart-count").innerHTML = 0;
+  }
+} else {
+  // Handle the case when the local storage variable doesn't exist
+  console.log("Local storage item does not exist.");
 }
 
 export { addToCart };

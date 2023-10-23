@@ -99,8 +99,8 @@ const uniform_I = [
 export { uniform_A, uniform_B, uniform_C, uniform_D, uniform_E, uniform_F, uniform_G, uniform_H, uniform_I };
 // text
 const itemTextA = [
-  `<h3>Long sleeve</h3><p>Gold Shirt</p>`,
-  `<h3>Short sleeve</h3><p>Gold Shirt</p>`,
+  `<h3>Long sleeves</h3><p>Gold Shirt</p>`,
+  `<h3>Short sleeves</h3><p>Gold Shirt</p>`,
   `<h3>Jersey</h3><p>Gold and black</p>`,
   `<h3>Pullover</h3><p>Gold and black</p>`,
   `<h3>Trouser</h3><p>Black</p>`,
@@ -109,18 +109,18 @@ const itemTextA = [
   `<h3>Tracksuits</h3><p>Gold and black</p>`,
 ];
 const itemTextB = [
-  `<h3>Long sleeve</h3><p>Royal Purple shirt</p>`,
-  `<h3>Short sleeve</h3><p>Royal Purple shirt</p>`,
+  `<h3>Long sleeves</h3><p>Royal Purple shirt</p>`,
+  `<h3>Short sleeves</h3><p>Royal Purple shirt</p>`,
   `<h3>Jersey</h3><p>Grey</p>`,
   `<h3>Pullover</h3><p>Grey</p>`,
   `<h3>Trouser</h3><p>Grey</p>`,
   `<h3>Socks</h3><p>Grey</p>`,
   `<h3>Sports wear</h3><p>Blue and gold</p>`,
-  `<h3>Skirts</h3><p>Dark blue</p>`,
+  `<h3>Skirt</h3><p>Dark blue</p>`,
 ];
 const itemTextC = [
-  `<h3>Long sleeve</h3><p>Grey shirt</p>`,
-  `<h3>Short sleeve</h3><p>Grey shirt</p>`,
+  `<h3>Long sleeves</h3><p>Grey shirt</p>`,
+  `<h3>Short sleeves</h3><p>Grey shirt</p>`,
   `<h3>Jersey</h3><p>Maroon and gold</p>`,
   `<h3>Pullover</h3><p>Maroon and gold</p>`,
   `<h3>Trouser</h3><p>Grey</p>`,
@@ -131,29 +131,68 @@ const itemTextC = [
 ];
 
 const itemTextD = [
-  `<h3>Long sleeve</h3><p>Lightblue shirt</p>`,
-  `<h3>Short sleeve</h3><p>Lightblue shirt</p>`,
+  `<h3>Long sleeves</h3><p>Lightblue shirt</p>`,
+  `<h3>Short sleeves</h3><p>Lightblue shirt</p>`,
   `<h3>Jersey</h3><p>Lightblue</p>`,
   `<h3>Pullover</h3><p>Lightblue</p>`,
   `<h3>Trouser</h3><p>Grey</p>`,
   `<h3>Socks</h3><p>Lightblue</p>`,
-  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Skirt</h3><p>Lightblue</p>`,
   `<h3>Tracksuits</h3><p>Lightblue</p>`,
 ];
 const itemTextE = [
-  `<h3>Long sleeve</h3><p>Gold shirt</p>`,
-  `<h3>Short sleeve</h3><p>Gold shirt</p>`,
-  `<h3>Jersey</h3><p>Green and yellow</p>`,
-  `<h3>Pullover</h3><p>Green and yellow</p>`,
+  `<h3>Long sleeves</h3><p>Gold shirt</p>`,
+  `<h3>Short sleeves</h3><p>Gold shirt</p>`,
+  `<h3>Jersey</h3><p>Green & yellow</p>`,
+  `<h3>Pullover</h3><p>Green & yellow</p>`,
   `<h3>Trouser</h3><p>Grey</p>`,
   `<h3>Socks</h3><p>Green</p>`,
   `<h3>Drimack</h3><p>Green</p>`,
-  `<h3>Skirts</h3><p>Green</p>`,
+  `<h3>Skirt</h3><p>Green</p>`,
 ];
-const itemTextF = [`<h3>Long sleeve</h3><p>White</p>`, `<h3>Short sleeve</h3><p>White</p>`, `<h3>Jersey</h3><p>Naivyblue</p>`, `<h3>Pullover</h3><p>Naivyblue</p>`, `<h3>Trouser</h3><p>Grey</p>`];
-const itemTextG = [];
-const itemTextH = [];
-const itemTextI = [];
+const itemTextF = [
+  `<h3>Long sleeves</h3><p>White</p>`,
+  `<h3>Short sleeves</h3><p>White</p>`,
+  `<h3>Jersey</h3><p>Naivyblue</p>`,
+  `<h3>Pullover</h3><p>Naivyblue</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Socks</h3><p>Grey</p>`,
+  `<h3>Skirt</h3><p>Naivyblue</p>`,
+  `<h3>Skirt</h3><p>Check</p>`,
+];
+const itemTextG = [
+  `<h3>T-shirt</h3><p>Green</p>`,
+  `<h3>Jersey</h3><p>Green</p>`,
+  `<h3>Pullover</h3><p>Green</p>`,
+  `<h3>Sports wear</h3><p>Green & orange</p>`,
+  `<h3>Shorts</h3><p>Green</p>`,
+  `<h3>Drimack</h3><p>Green</p>`,
+  `<h3>Trouser</h3><p>Grey</p>`,
+  `<h3>Long socks</h3><p>Grey</p>`,
+  `<h3>School dress</h3><p>Green & check</p>`,
+];
+const itemTextH = [
+  `<h3>Long sleeves</h3><p>White shirt</p>`,
+  `<h3>Short sleeves</h3><p>White shirt</p>`,
+  `<h3>Golf shirt - Boys</h3><p>Red</p>`,
+  `<h3>Golf shirt - Girls</h3><p>Red</p>`,
+  `<h3>Jersey</h3><p>Naivyblue</p>`,
+  `<h3>Pullover</h3><p>Naivyblue</p>`,
+  `<h3>Trouser</h3><p>Naivyblue</p>`,
+  `<h3>Long socks</h3><p>Naivyblue</p>`,
+  `<h3>Skirt</h3><p>Check</p>`,
+  `<h3>Short sleeves</h3><p>White & check</p>`,
+];
+const itemTextI = [
+  `<h3>Long sleeves</h3><p>White shirt</p>`,
+  `<h3>Short sleeves</h3><p>White shirt</p>`,
+  `<h3>Jersey</h3><p>Naivyblue</p>`,
+  `<h3>Pullover</h3><p>Naivyblue</p>`,
+  `<h3>Trouser</h3><p>Naivyblue</p>`,
+  `<h3>Sports wear</h3><p>Naivyblue & white</p>`,
+  `<h3>School dress</h3><p>Check</p>`,
+  `<h3>Skirt</h3><p>Check</p>`,
+];
 // export {};
 
 //Check buttons
