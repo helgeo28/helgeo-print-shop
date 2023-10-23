@@ -11,7 +11,7 @@ const images = [
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
   ["printing/em1.jpg", "printing/em2.jpg", "printing/em3.jpg", "printing/em4.jpg"],
   ["printing/wk1.jpg", "printing/wk2.jpg", "printing/wk3.jpg", "printing/wk4.jpg"],
-  ["printing/sb1.webp", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
+  ["printing/sb1.webp", "printing/sb2.png", "printing/sb3.webp", "printing/sb4.webp"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
   ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
