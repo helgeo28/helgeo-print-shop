@@ -6,70 +6,70 @@
             </div> */
 
 .products {
-    display: flex;
-    width: 90%;
-    margin-left: 5%;
-    height: 500px;
-    flex-wrap: wrap;
-    margin-bottom: 0px;
-    clear: both;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  height: 500px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  clear: both;
 }
 
 .products-panel {
-    width: 30%;
-    height: 400px;
-    margin: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
-    transition: 1s;
-    clear: both;
+  width: 30%;
+  height: 400px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
+  transition: 1s;
+  clear: both;
 }
 
 .products-panel .fa {
-    color: white;
-    font-size: 30px;
-    margin-top: 35%;
+  color: white;
+  font-size: 30px;
+  margin-top: 35%;
 }
 
 .products-panel .fa:hover {
-    background: orange;
-    transition: 0.5s;
+  background: orange;
+  transition: 0.5s;
 }
 
 .left {
-    float: left;
-    background: #ccc;
-    padding: 5px;
-    cursor: pointer;
+  float: left;
+  background: #ccc;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .right {
-    float: right;
-    background: #ccc;
-    padding: 5px;
-    cursor: pointer;
+  float: right;
+  background: #ccc;
+  padding: 5px;
+  cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
-    .products {
-        display: flex;
-        width: 90%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 0px;
-    }
-    .products-panel {
-        width: 90%;
-        height: 420px;
-        background: white;
-        background-size: 70%;
-    }
-    .products-panel .fa {
-        color: white;
-        font-size: 30px;
-        margin-top: 35%;
-    }
+@media screen and (max-width: 600px) {
+  .products {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .products-panel {
+    width: 90%;
+    height: 420px;
+    background: white;
+    background-size: 70%;
+  }
+  .products-panel .fa {
+    color: white;
+    font-size: 30px;
+    margin-top: 35%;
+  }
 }

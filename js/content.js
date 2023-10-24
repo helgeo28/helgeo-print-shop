@@ -126,8 +126,8 @@ const itemTextC = [
   `<h3>Trouser</h3><p>Grey</p>`,
   `<h3>Socks</h3><p>Maroon and gold</p>`,
   `<h3>Drimack</h3><p>Maroon</p>`,
-  `<h3>Sports wear</h3>Maroon and gold</p>`,
-  `<h3>School dress</h3>Maroon and gold</p>`,
+  `<h3>Sports wear</h3><p>Maroon and gold</p>`,
+  `<h3>School dress</h3><p>Maroon and gold</p>`,
 ];
 
 const itemTextD = [
