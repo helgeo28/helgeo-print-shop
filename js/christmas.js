@@ -2,13 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentDate = new Date();
   const startDate = new Date(currentDate.getFullYear(), 11, 24); // 24th December
   const endDate = new Date(currentDate.getFullYear(), 11, 30); // 30th December
+
   const logo = document.querySelector(".logo");
 
   if (currentDate >= startDate && currentDate <= endDate) {
     const container = document.body;
+
+    //logo
+    logo.style.backgroundImage = "url(christmas/logo1.png)";
+
     const numSnowflakes = 50;
 
-    logo.style.backgroundImage = "url(christmas/logo1.png)";
+    const snowflakes = [];
 
     for (let i = 0; i < numSnowflakes; i++) {
       createSnowflake();
@@ -21,28 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
       snowflake.style.height = Math.random() * 10;
       container.appendChild(snowflake);
 
-      const animationDuration = Math.random() * 6 + 2; // between 2 and 5 seconds
+      const animationDuration = Math.random() * 3 + 2; // between 2 and 5 seconds
       const startPosition = Math.random() * window.innerWidth;
 
       snowflake.style.left = startPosition + "px";
       snowflake.style.animation = `fall ${animationDuration}s linear infinite`;
 
       snowflake.addEventListener("animationiteration", () => {
-        // Reset snowflake when it reaches the bottom
+        // Move snowflake to the bottom when it reaches the bottom
         snowflake.style.left = Math.random() * window.innerWidth + "px";
+        accumulateSnow(snowflake);
       });
+    }
 
-      // Check for collisions with the bottom of the window
-      setInterval(() => {
-        const snowflakeRect = snowflake.getBoundingClientRect();
-        const bottomOfWindow = window.innerHeight;
+    function accumulateSnow(flake) {
+      const bottomPosition = window.innerHeight - 10; // Adjust the bottom position as needed
+      const accumulatedHeight = Math.random() * 20; // Adjust the height increment as needed
 
-        if (snowflakeRect.bottom >= bottomOfWindow) {
-          // Snowflake reached the bottom, reset its position
-          snowflake.style.left = Math.random() * window.innerWidth + "px";
-          snowflake.style.animation = `fall ${animationDuration}s linear infinite`;
-        }
-      }, 100);
+      flake.style.bottom = accumulatedHeight + "px";
     }
   }
 });

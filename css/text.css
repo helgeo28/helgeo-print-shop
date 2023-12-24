@@ -10,12 +10,11 @@
 .text-title {
   height: 30px;
   padding: 10px;
-  width: 50%;
+  width: 70%;
   background: white;
   box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
   font-size: 26px;
   border-radius: 5px;
-  border-left: 5px solid orange;
   transition: 1s;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
@@ -30,10 +29,9 @@
 }
 
 .text-paragraph {
-  width: 50%;
+  width: 70%;
   background: white;
   padding: 10px 10px 40px 10px;
-  border-left: 5px solid rgb(255, 207, 50);
   display: none;
   transition: 1s;
   border-bottom: 0.5px solid rgb(211, 211, 211);
@@ -46,12 +44,11 @@
 .no_display {
   height: 30px;
   padding: 10px;
-  width: 50%;
+  width: 70%;
   background: white;
   box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
   font-size: 26px;
   border-radius: 5px;
-  border-left: 5px solid orange;
   transition: 1s;
   cursor: pointer;
   border-bottom: 0.5px solid #ccc;
