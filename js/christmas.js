@@ -3,14 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const startDate = new Date(currentDate.getFullYear(), 11, 24); // 24th December
   const endDate = new Date(currentDate.getFullYear(), 11, 30); // 30th December
   const logo = document.querySelector(".logo");
-  const topChristmas = document.querySelector(".top-christmas");
 
   if (currentDate >= startDate && currentDate <= endDate) {
     const container = document.body;
     const numSnowflakes = 50;
 
     logo.style.backgroundImage = "url(christmas/logo1.png)";
-    topChristmas.style.display = "block";
 
     for (let i = 0; i < numSnowflakes; i++) {
       createSnowflake();
