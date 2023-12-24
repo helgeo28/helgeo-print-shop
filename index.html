@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="http://jjmpire.6te.net/admin.css">
+    <link rel="stylesheet" href="css/favourite.css">
     <script>
         function loading() {
             document.getElementById("loaders").style.display = "flex";
@@ -215,13 +216,13 @@
                     </div>
                     <span id="cart-count"></span>
                 </i>
-
+                <a href="#favourite">
                 <i class='fa-regular fa-heart'>
                     <div class="tool-tip">
                         <div class="container-tip"></div>
                         <div class="container">favourites</div>
                     </div>
-                </i>
+                </i></a>
             </div>
         </div>
     </div>
@@ -600,7 +601,13 @@
             </div>
         </div>
     </section>
+    <section id="favourite">
+        <h1>My favourite list</h1>
+        <hr>
+        <div class="favourite-items" id="favourite-items">
 
+        </div>
+    </section>
 
     <div id="loaders">
         <div class="loader"></div>
@@ -644,6 +651,8 @@
     </script>
     <script type="module" src="js/navigation.js">
     </script>
+    <script type="module" src="js/favourite.js">
+    </script>
     <script src="js/state.js">
     </script>
     <script src="js/printing.js">
@@ -660,6 +669,7 @@
     </script>
     <script src="click_state.js">
     </script>
+
 </body>
 
 </html>

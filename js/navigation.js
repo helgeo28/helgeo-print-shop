@@ -50,6 +50,7 @@ let icons = document.querySelector(".icons");
 let cartCounter = document.querySelector(".fa #cart-count");
 let sideNav = document.querySelector("#sideNav");
 let uniCategory = document.querySelector("#category");
+let heart = document.querySelector(".icons a");
 
 // Get the offset position of the navbar
 let sticky = header.offsetTop;
@@ -59,6 +60,7 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
     logo.classList.add("makeWhite");
+    heart.classList.add("makeWhite");
     icons.classList.add("newIcons");
     cartCounter.classList.add("cartNumber");
     sideNav.classList.add("fixing");
@@ -66,6 +68,7 @@ function myFunction() {
   } else {
     header.classList.remove("sticky");
     logo.classList.remove("makeWhite");
+    heart.classList.remove("makeWhite");
     icons.classList.remove("newIcons");
     cartCounter.classList.remove("cartNumber");
     sideNav.classList.remove("fixing");

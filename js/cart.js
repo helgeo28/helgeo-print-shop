@@ -1,5 +1,3 @@
-import * as productImages from "./content.js";
-
 function addToCart() {
   const products = {
     a1: {

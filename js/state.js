@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".sidenav a");
   //items links
   const viewItemLinks = document.querySelectorAll(".viewItems a");
+  //favourites
+  const favourites = document.querySelector(".icons a");
+
   const sections = document.querySelectorAll("section");
   const page_title = document.getElementById("page-name");
 
@@ -67,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   viewItemLinks.forEach((linkIndex) => {
     linkIndex.addEventListener("click", handleNavLinkClick);
   });
+  favourites.addEventListener("click", handleNavLinkClick);
 
   // Retrieve and set the last active section from localStorage on page load
   const lastActiveSection = localStorage.getItem("activeSection");

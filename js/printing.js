@@ -4,19 +4,99 @@ let rightKey = document.querySelectorAll(".right");
 
 //sublimation images
 const images = [
-  ["printing/GZ1.jpg", "printing/GZ1.png", "printing/GZ2.jpg", "printing/GZ4.png", "printing/GZ5.jpg", "printing/GZ7.jpg", "printing/GZ8.jpg"],
-  ["printing/SP1.jpg", "printing/SP2.jpg", "printing/SP3.jpg", "printing/SP4.jpg", "printing/SP5.jpg", "printing/SP6.jpg", "printing/SP7.jpg"],
-  ["printing/HD1.jpg", "printing/HD2.jpg", "printing/HD3.jpg", "printing/HD4.jpg"],
-  ["printing/SU1.jpg", "printing/SU1B.jpg", "printing/SU2.jpg", "printing/SU2B.jpg", "printing/SU3.jpg", "printing/SU3B.jpg", "printing/SU4.jpg", "printing/SU4B.jpg"],
-  ["printing/JS1.jpg", "printing/JS2.jpg", "printing/JS3.jpg", "printing/JS4.jpg"],
-  ["printing/em1.jpg", "printing/em2.jpg", "printing/em3.jpg", "printing/em4.jpg"],
-  ["printing/wk1.jpg", "printing/wk2.jpg", "printing/wk3.jpg", "printing/wk4.jpg"],
-  ["printing/sb1.webp", "printing/sb2.png", "printing/sb3.webp", "printing/sb4.webp"],
-  ["printing/vn1.png", "printing/vn2.jpg", "printing/vn3.jpg", "printing/vn4.jpg", "printing/vn5.jpg", "printing/vn6.jpg"],
-  ["printing/vh1.jpg", "printing/vh2.webp", "printing/vh3.jpg", "printing/vh4.jpg", "printing/vh5.jpg"],
-  ["printing/kd1.jpg", "printing/kd2.jpg", "printing/kd3.jpg", "printing/kd4.png"],
-  ["Branding/mugs/M1.jpg", "Branding/mugs/M2.jpg", "Branding/mugs/M3.jpg", "Branding/mugs/M4.jpg", "Branding/mugs/M5.jpg", "Branding/mugs/M6.jpg"],
-  ["Branding/phones/p1.webp", "Branding/phones/p2.webp", "Branding/phones/p3.webp", "Branding/phones/p4.jpg"],
+  [
+    "printing/GZ1.jpg",
+    "printing/GZ1.png",
+    "printing/GZ2.jpg",
+    "printing/GZ4.png",
+    "printing/GZ5.jpg",
+    "printing/GZ7.jpg",
+    "printing/GZ8.jpg",
+  ],
+  [
+    "printing/SP1.jpg",
+    "printing/SP2.jpg",
+    "printing/SP3.jpg",
+    "printing/SP4.jpg",
+    "printing/SP5.jpg",
+    "printing/SP6.jpg",
+    "printing/SP7.jpg",
+  ],
+  [
+    "printing/HD1.jpg",
+    "printing/HD2.jpg",
+    "printing/HD3.jpg",
+    "printing/HD4.jpg",
+  ],
+  [
+    "printing/SU1.jpg",
+    "printing/SU1B.jpg",
+    "printing/SU2.jpg",
+    "printing/SU2B.jpg",
+    "printing/SU3.jpg",
+    "printing/SU3B.jpg",
+    "printing/SU4.jpg",
+    "printing/SU4B.jpg",
+  ],
+  [
+    "printing/JS1.jpg",
+    "printing/JS2.jpg",
+    "printing/JS3.jpg",
+    "printing/JS4.jpg",
+  ],
+  [
+    "printing/em1.jpg",
+    "printing/em2.jpg",
+    "printing/em3.jpg",
+    "printing/em4.jpg",
+  ],
+  [
+    "printing/wk1.jpg",
+    "printing/wk2.jpg",
+    "printing/wk3.jpg",
+    "printing/wk4.jpg",
+  ],
+  [
+    "printing/sb1.webp",
+    "printing/sb2.png",
+    "printing/sb3.webp",
+    "printing/sb4.webp",
+  ],
+  [
+    "printing/vn1.png",
+    "printing/vn2.jpg",
+    "printing/vn3.jpg",
+    "printing/vn4.jpg",
+    "printing/vn5.jpg",
+    "printing/vn6.jpg",
+  ],
+  [
+    "printing/vh1.jpg",
+    "printing/vh2.webp",
+    "printing/vh3.jpg",
+    "printing/vh4.jpg",
+    "printing/vh5.jpg",
+  ],
+  [
+    "printing/kd1.jpg",
+    "printing/kd2.jpg",
+    "printing/kd3.jpg",
+    "printing/kd4.png",
+  ],
+  [
+    "Branding/mugs/M1.jpg",
+    "Branding/mugs/M2.jpg",
+    "Branding/mugs/M3.jpg",
+    "Branding/mugs/M4.jpg",
+    "Branding/mugs/M5.jpg",
+    "Branding/mugs/M6.jpg",
+  ],
+  [
+    "Branding/phones/p1.webp",
+    "Branding/phones/p2.webp",
+    "Branding/phones/p3.webp",
+    "Branding/phones/p4.jpg",
+  ],
   [
     "Branding/bottles/b1.jpg",
     "Branding/bottles/b2.jpg",
@@ -58,7 +138,7 @@ const caption = document.querySelectorAll(".slide");
 slides.forEach((slides, index) => {
   let captionText = document.createElement("p");
   let addItemToCart = document.createElement("button");
-  addItemToCart.style.width = "200px";
+  addItemToCart.style.width = "90%";
   addItemToCart.style.height = "50px";
   addItemToCart.style.display = "flex";
   addItemToCart.style.justifyContent = "center";

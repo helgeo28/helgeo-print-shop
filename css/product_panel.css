@@ -24,6 +24,23 @@
   box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
   transition: 1s;
   clear: both;
+  position: relative;
+}
+
+.products-panel .add_item {
+  background: black;
+  width: 90%;
+  color: white;
+  font-size: 24px;
+  border: none;
+  margin-top: 295px;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: cell;
+  position: absolute;
+}
+.add_item:hover {
+  color: orange;
 }
 
 .products-panel .fa {

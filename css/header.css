@@ -1,248 +1,244 @@
 body {
-    margin: 0%;
-    font-family: Arial, sans-serif;
-    background: rgb(240, 240, 240);
+  margin: 0%;
+  font-family: Arial, sans-serif;
+  background: rgb(240, 240, 240);
 }
 
 #header {
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    flex-direction: row;
-    background: rgb(255, 251, 245);
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    width: 100%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  background: rgb(255, 251, 245);
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
 }
 
 #nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #header #mySidenavDesktop {
-    display: flex;
-    /* position: absolute; */
-    margin-top: 0px;
+  display: flex;
+  /* position: absolute; */
+  margin-top: 0px;
 }
 #header #mySidenavMobile {
-    display: flex;
-    /* position: absolute; */
-    margin-top: 0px;
+  display: flex;
+  /* position: absolute; */
+  margin-top: 0px;
 }
 
-
-
-
 .icons {
-    font-size: 30px;
-    width: 20%;
-    margin-left: 65%;
-    position: absolute;
+  font-size: 30px;
+  width: 20%;
+  margin-left: 65%;
+  position: absolute;
+}
+.icons a {
+  color: black;
 }
 
 .icons .fa,
 .fa-regular {
-    float: right;
-    margin: 0px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 50%;
+  float: right;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .icons .fa:hover .tool-tip,
 .icons .fa-regular:hover .tool-tip {
-    visibility: visible;
+  visibility: visible;
 }
 
 .icons .fa:hover,
 .icons .fa-regular:hover {
-    transition-delay: .2s;
-    color: orange;
+  transition-delay: 0.2s;
+  color: orange;
 }
 
-.l,.r{
-    visibility: visible;
+.l,
+.r {
+  visibility: visible;
 }
-.l:hover .tool-tip{
-    visibility: visible;
-    position: relative;
-    margin-top: 0px;
-    clear: both;
-    margin-left: 200px;
+.l:hover .tool-tip {
+  visibility: visible;
+  position: relative;
+  margin-top: 0px;
+  clear: both;
+  margin-left: 200px;
 }
-.r:hover .tool-tip{
-    visibility: visible;
-    position: relative;
-    margin-top: 0px;
-    clear: both;
-    margin-left: 200px;
+.r:hover .tool-tip {
+  visibility: visible;
+  position: relative;
+  margin-top: 0px;
+  clear: both;
+  margin-left: 200px;
 }
 
 /* tool-tip */
 
 .tool-tip {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    visibility: hidden;
-    opacity: 0.8;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  visibility: hidden;
+  opacity: 0.8;
 }
 
 .container {
-    background: black;
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
-    position: absolute;
-    margin-top: 20px;
+  background: black;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 20px;
 }
 
 .container-tip {
-    background: black;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    transform: rotate(45deg);
-    margin-top: -5px;
-    border-radius: 2px;
+  background: black;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  margin-top: -5px;
+  border-radius: 2px;
 }
-
 
 /* Nav */
 
 #header #mySidenavDesktop a {
-    margin: 0px 10px;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    height: 50px;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  height: 50px;
 }
 #header #mySidenavMobile a {
-    margin: 0px 10px;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    display: none;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  display: none;
 }
 
-
 #header #mySidenavDesktop a:hover .link-under {
-    width: 100%;
-    transition: 0.5s;
+  width: 100%;
+  transition: 0.5s;
 }
 
 #header #mySidenavDesktop a:hover {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .link-under {
-    width: 0%;
-    background: black;
-    height: 2px;
-    margin-top: 10px;
-    transform: .5s;
+  width: 0%;
+  background: black;
+  height: 2px;
+  margin-top: 10px;
+  transform: 0.5s;
 }
-
 
 /* logo */
 
 .logo {
-    background-image: url(logo1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 280px;
-    height: 100px;
-    position: absolute;
-    left: 20px;
-    margin-top: -30px;
+  background-image: url(logo1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  left: 20px;
+  margin-top: -30px;
 }
 
 .theme {
-    background-image: url(theme.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    width: 100%;
-    height: 70px;
-    border-bottom: 1px solid #ccc;
+  background-image: url(theme.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #ccc;
 }
-
 
 /* Arrows */
 
 .fa-chevron-right {
-    float: right;
-    opacity: 0.8;
-    display: none;
-    color: #ccc;
+  float: right;
+  opacity: 0.8;
+  display: none;
+  color: #ccc;
 }
-
 
 /* ooo */
 
-@media screen and (max-width:600px) {
-    .logo {
-        background-image: url(logo1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 220px;
-        height: 70px;
-        position: absolute;
-        left: 5px;
-        margin-top: -60px;
-    }
-    .icons {
-        width: 40%;
-        font-size: 30px;
-        margin-top: -60px;
-        margin-left: 56%;
-        position: absolute;
-    }
-    #header #mySidenavMobile a {
-        width: 90%;
-        border-bottom: .5px solid #ccc;
-        text-justify: auto;
-        color: orange;
-        margin: 10px;
-        text-align: right;
-        display: block;
-    }
-    #header #mySidenavMobile {
-        display: none;
-        flex-direction: column;
-        margin-top: 50px;
-        background: white;
-        background-image: url(bg.jpg);
-        position: fixed;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position-x: 0px;
-        background-position-y: -50px;
-    }
-    #header #mySidenavDesktop {
-        display:none;
-    }
-    .link-under {
-        display: none;
-    }
-  
-    .fa-chevron-right {
-        float: right;
-        opacity: 0.8;
-        color: #ccc;
-    }
+@media screen and (max-width: 600px) {
+  .logo {
+    background-image: url(logo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 70px;
+    position: absolute;
+    left: 5px;
+    margin-top: -60px;
+  }
+  .icons {
+    width: 40%;
+    font-size: 30px;
+    margin-top: -60px;
+    margin-left: 56%;
+    position: absolute;
+  }
+  #header #mySidenavMobile a {
+    width: 90%;
+    border-bottom: 0.5px solid #ccc;
+    text-justify: auto;
+    color: orange;
+    margin: 10px;
+    text-align: right;
+    display: block;
+  }
+  #header #mySidenavMobile {
+    display: none;
+    flex-direction: column;
+    margin-top: 50px;
+    background: white;
+    background-image: url(bg.jpg);
+    position: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -50px;
+  }
+  #header #mySidenavDesktop {
+    display: none;
+  }
+  .link-under {
+    display: none;
+  }
 
-    .l:hover .tool-tip{
-        display: none;
-    }
-    .r:hover .tool-tip{
-        display: none;
-    }
+  .fa-chevron-right {
+    float: right;
+    opacity: 0.8;
+    color: #ccc;
+  }
+
+  .l:hover .tool-tip {
+    display: none;
+  }
+  .r:hover .tool-tip {
+    display: none;
+  }
 }
