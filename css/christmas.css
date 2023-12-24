@@ -5,8 +5,6 @@ body {
 .snowflake {
   position: absolute;
   background: #fff;
-  width: 10px;
-  height: 10px;
   border-radius: 50%;
   pointer-events: none;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
@@ -18,17 +16,6 @@ body {
   to {
     transform: translateY(100vh);
   }
-}
-
-.top-christmas {
-  display: none;
-  position: absolute;
-  margin-bottom: -500px;
-  top: 20px;
-  z-index: 1;
-}
-.top-christmas .text {
-  margin-top: 200px;
 }
 
 @media screen and (max-width: 600px) {

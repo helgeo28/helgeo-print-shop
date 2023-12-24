@@ -17,9 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function createSnowflake() {
       const snowflake = document.createElement("div");
       snowflake.className = "snowflake";
+      snowflake.style.width = Math.random() * 10;
+      snowflake.style.height = Math.random() * 10;
       container.appendChild(snowflake);
 
-      const animationDuration = Math.random() * 3 + 2; // between 2 and 5 seconds
+      const animationDuration = Math.random() * 6 + 2; // between 2 and 5 seconds
       const startPosition = Math.random() * window.innerWidth;
 
       snowflake.style.left = startPosition + "px";
