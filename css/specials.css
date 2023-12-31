@@ -1,0 +1,45 @@
+.new{
+    background: rgb(255, 0, 0);
+    color:white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.maintainance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    flex-direction: column;
+}
+.fa-cog:nth-child(1){
+    font-size: 45px;
+    animation-name: gear1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.fa-cog:nth-child(2){
+    font-size: 30px;
+    animation-name: gear2;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gear1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes gear2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
