@@ -6,6 +6,7 @@
 
 .page-name {
     margin-left: 80px;
+    display: flex;
 }
 
 .description {

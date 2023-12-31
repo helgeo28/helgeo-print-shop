@@ -43,3 +43,15 @@
         transform: rotate(-360deg);
     }
 }
+
+
+/* extra */
+.go-to-home{
+    display: block;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 10px;
+}
+.go-to-home a{
+    text-decoration: none;
+}
