@@ -121,7 +121,7 @@ const description = [
   "Gazebos and banners",
   "Sports jerseys",
   "Custom hoodies",
-  "Matric and Grade 7's t-shirst",
+  "Matric and Grade 7 t-shirts",
   "Matric Jackets",
   "Baseball jackets",
   "Work uniform",
